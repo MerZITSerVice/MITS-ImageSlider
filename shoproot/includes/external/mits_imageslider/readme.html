@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anleitung f&uuml;r das Modul MITS ImageSlider v2.01</title>
+<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat|Fredericka+the+Great|Headland+One|Patrick+Hand|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+<style type="text/css">
+<!--
+*{padding:0;margin:0}
+html,body{font-size:100%;font-family:'Headland One',sans-serif;margin:0;padding:0}
+body{position:relative;background:#ffe;font-size:95%}
+header,nav,footer,section,artice,aside,dialog,figure{display:block}
+h1{text-align:center}
+h2,h3,h4,h5,h6{color:#444;font-family:'Love Ya Like A Sister';font-weight:normal;}
+h2{font-size:2.05em;padding:0.3em 0.2em;margin-bottom:0.5em;border-bottom:0.1em dashed #ccc;text-shadow:0 0 0.2em #666}
+h3{font-size:1.8em;padding:0.25em 0.2em;margin-bottom:0.5em;border-bottom:0.1em dotted #eee;text-shadow:0 0 0.2em #666}
+h4{font-size:1.6em;padding:0.2em 0.2em;margin-bottom:0.4em;text-shadow:0 0 0.2em #666}
+h5{font-size:1.45em;padding:0.125em 0.125em;margin-bottom:0.4em}
+h6{font-size:1.25em;padding:0.1em 0.125em;margin-bottom:0.3em}
+p{padding:0.25em;margin-bottom:0.25em;text-align:justify}
+img{max-width:100%;height:auto;border:0}
+a:link{color:#444;text-decoration:none;-webkit-transition:0.5s;transition:0.5s}
+a:active{color:#444}
+a:visited{color:#444}
+a:hover{color:#6a9}
+a:focus{color:#6a9}
+pre{border:medium none;margin:0;color: #00C;padding:1.6em 0.6em 0.6em 0.6em;background:#fff;box-shadow:0 0 0.4em #666;margin-top:1em;margin-bottom:1em}
+.toplogo{text-align:center}
+footer{background:#333 linear-gradient(#555,#333);width:100%;float:left;border-top:0.3em solid #6a9;box-shadow:0 -0.4em 0.4em #ccc;color:#ccc}
+div.copyright{clear:both;display:block;text-align:center;font-size:0.75em;background:#333;paddin-top:1.2em}
+p.copyrightinfo{clear:left;padding:0.6em 0;font-size:0.8em;color:#666;margin:0.4em auto;text-align:center;width:100%}
+p.copyrightinfo a{text-decoration:none;color:#666}
+#main {padding:8px}
+#main ul {margin-top:10px;margin-bottom:10px}
+#main ul,#main ul li{margin-left:1em;list-style:disc}
+#main ol,#main ol li{margin-left:1em}
+#main ol.install li{margin-left:1em;margin-bottom:10px}
+.hinweis{border:1px solid #900;padding:8px;margin:10px auto;background:#FF9}
+a.imagebutton:link{box-shadow:0 0 0.4em #444;display:block;transition:0.5s;text-align:center;width:90%;margin:0.5em auto;-moz-border-radius:0.5em;-webkit-border-radius:0.5em;border-radius:0.5em;border:0;color:#fff;padding:0.25em 0.5em;background:linear-gradient(#6a9,#6a9);font-size:1.05em;font-family:'Patrick Hand'}
+a.imagebutton:active{color:#fff;background:#6a9 linear-gradient(#6a9,#6a9)}
+a.imagebutton:visited{color:#fff;background:#6a9 linear-gradient(#6a9,#6a9)}
+a.imagebutton:hover{box-shadow:0 0 0.4em #6a9;color:#fff;background:#6a9 linear-gradient(#666,#333)}
+a.imagebutton:focus{box-shadow:0 0 0.4em #6a9;color:#fff;background:#6a9 linear-gradient(#666,#333)}
+-->
+</style></head>
+<body>
+<header>
+	<h1><a href="https://www.merz-it-service.de" title="MerZ IT-SerVice" class="toplogo" name="top" id="top"><img src="https://www.merz-it-service.de/templates/merz-it-service_responsive/img/logo.png" alt="MerZ IT-SerVice" /></a></h1>
+</header>
+<main role="main">	
+	<div id="main">
+    	<h2>Anleitung f&uuml;r das Modul MITS ImageSlider v2.01</h2>
+        
+        <p><strong>Modul-Download: <a href="http://imageslider.merz-it-service.de/MITS_ImageSlider_v2.01.zip" target="_blank"><u>MITS_ImageSlider_v2.01.zip</u></a></strong></p>
+    	
+        <h3>1. Installation</h3>
+        
+        <p><strong>Systemvoraussetzung:</strong> Funktionsf&auml;hige modified eCommerce Shopsoftware ab der Version 2.0.0 rev 9678</p>
+        
+        <p class="hinweis"><strong>Vor der Installation des Moduls sichern sie bitte komplett ihre aktuelle Shopinstallation (Dateien und Datenbank)!<br/>Für eventuelle Schäden übernehmen wir keine Haftung!<br />Die Installation und Nutzung des Moduls Imageslider v2.01 erfolgt auf eigene Gefahr!</strong></p>
+        
+        <p>Die Installation des Modul Imageslider v2.01 ist in der aktuellen Shopversion 2.0.0 ziemlich einfach.</p>
+    	
+        <ol class="install">
+        	<li>Wenn ihr Template bereits Anpassung für den Imageslider v1.5 enthalten hat, so entfernen Sie bitte diese Anpassungen vor der Installation! Dazu müssen Sie nur die Anweisungen für die Templateanpassungen aus der Installationsanleitung für die Version v1.5 rückgängig machen.</li>
+            <li>Falls der admin-Order des Shops unbenannt wurde, dann entsprechnd auch den Ordner <i>admin</i> im Verzeichns <i>shoproot</i> des Moduls vor dem Hochladen ebenfalls entsprechend umbenennen!</li>
+       		<li>Kopieren Sie anschließend einfach alle Dateien in dem Verzeichnis <i>shoproot</i> aus dem Modulpaket <i>MITS_ImageSlider_v2.01</i> in das Hauptverzeichnis ihrer bestehenden modified eCommerce Shopsoftware 2.0.0 Installation. Es werden dabei keine Dateien überschrieben!</li>
+            <li>Nachdem sie alle Dateien in den Shop übertragen haben melden sie sich bitte im Shop mit einemm gültigen Adminzugang an, der die Berechtigung besitzt auch Systemmodule zu installieren.</li>
+            <li>Wechseln sie in den Administrationsbereich und rufen sie den Menüpunkt <i>Module -> System-Module</i> auf.</li>
+            <li>Markieren sie dort den Eintrag <i>Imageslider v2.01 © by Hetfield (MerZ IT-SerVice)</i> und klicken sie dann auf der rechten Seite auf den Button <i>Installieren</i>. Das Modul wird nun komplett installiert. Sollten sie von einer früheren Version 1.5 updaten, erledigt der Installer des Moduls die Anpassung der Datenbank komplett für sie.</li>
+            <li>Konfigurieren sie nun das Modul nach ihren Wünschen. Die verschiedenen Einstellmöglichkeiten sind im Modul erklärt.</li>
+            <li>Rufen sie den Menüpunkt <i>Hilfsprogramme -> MITS ImageSlider v2.01</i> auf. Dort können sie Einträge anlegen, bearbeiten oder löschen. </li>
+        </ol>
+        
+        <h3>2. Den ImageSlider v2.01 im Template verfügbar machen</h3>
+        
+        <p>Um einen ImageSlider im Template anzuzeigen gibt es in der neuen Version verschiedene Möglichkeiten.</p>
+        
+        <h4>Variante 1: Per Smarty-Variable in der index.html des verwendeten Templates</h4>
+        
+        <p>Fügen Sie für den Aufruf des Standard-ImageSlider-Gruppe MITS_IMAGESLIDER einfach folgende Smarty-Variable an die gewünschte Stelle in ihrer index.html ein:</p>
+        
+        <pre>
+        {if isset($MITS_IMAGESLIDER)}{$MITS_IMAGESLIDER}{/if}
+        </pre>
+        
+        <p>Möchten sie z.B. eine andere ImageSlider-Gruppe anzeigen lassen, dann fügen Sie für den Aufruf der anderen ImageSlider-Gruppe (in diesem Beispiel mit dem Gruppennamen ANDRER_IMAGESLIDER) einfach folgende Smarty-Variable an die gewünschte Stelle in ihrer index.html ein:</p>
+        
+        <pre>
+        {if isset($ANDERER_IMAGESLIDER)}{$ANDERER_IMAGESLIDER}{/if}
+        </pre>
+        
+        <p>Verwenden Sie das Slider-Plugin "NivoSlider", dann stehen ihnen insgesamt 4 verschieden Themes (Designs) zur Auswahl. Folgende 4 Themes stehen ihnen beim NivoSlider zur Verfügung:</p>
+        
+        <ul>
+            <li>theme-bar</li>
+            <li>theme-dark</li>
+            <li>theme-default <small>(Standard-Theme, kein besondere Aufruf notwendig)</small></li>
+            <li>theme-light</li>
+        </ul>
+        
+        <p>Diese können Sie durch Anpassung der Smarty-Variable per replace-Befehl wechseln. Im folgenden Beispiel wird das Theme von theme-default auf theme-bar gewechselt:</p>
+        
+        <pre>
+        {if isset($MITS_IMAGESLIDER)}
+           {$MITS_IMAGESLIDER|replace:'slider-wrapper theme-default':'slider-wrapper theme-bar'}
+        {/if}
+        </pre>
+        
+        <p>Hier ein weiteres Beispiel, diesmal wird das Theme von theme-default auf theme-light gewechselt:</p>
+        
+        <pre>
+        {if isset($ANDERER_IMAGESLIDER)}
+           {$ANDERER_IMAGESLIDER|replace:'slider-wrapper theme-default':'slider-wrapper theme-light'}
+        {/if}
+        </pre>
+        
+        <p>Sie können die Einstellung des ImagSlider-Moduls zur Anzeige <i>start</i> (nur auf der Startseite verfügbar) auch anders lösen. Stellen sie dazu die Anzeigedes Imagesliders auf <i>general</i> um. Anschließend können Sie dann zur Beschränkung der Anzeige auf die Startseite auch folgenden Smarty-Code in der index.html verwenden:</p>
+        
+        <pre>
+        {if strstr ($smarty.server.PHP_SELF, 'index')}
+            {if !strstr ($smarty.server.PHP_SELF, 'checkout')}
+                {if $smarty.get.cPath==null and $smarty.get.manufacturers_id==''}
+                    {if isset($MITS_IMAGESLIDER)}
+                        {$MITS_IMAGESLIDER|replace:'slider-wrapper theme-default':'slider-wrapper theme-dark'}
+                    {/if}
+                {/if}
+            {/if}
+        {/if}
+        </pre>
+        
+        <h4>Variante 2: Als Smarty-Plugin überall im Template verwenden</h4>
+        
+        <p>Neu im ImageSlider v2.01 ist die Nutzung des ImageSliders als Smarty-Plugin. Damit können Sie den ImageSlider in jeder beliebigen HTML-Template-Datei aufrufen. Vorraussetzung dafür ist die Einstellung der Anzeigeart <i>general</i>. Der Standardaufruf mit der Gruppe MITS_IMAGESLIDER sieht wie folgt aus:</p>
+        
+        <pre>
+        {getImageSlider slidergroup=mits_imageslider}
+        </pre>
+        
+        <p>Der Aufruf mit einer anderen Gruppe (hier z.B. die ImageSlider-Gruppe ANDERER_IMAGESLIDER) sieht wie folgt aus:</p>
+        
+        <pre>
+        {getImageSlider slidergroup=anderer_imageslider}
+        </pre>
+        
+        <p>Durch die Erweiterung des Aufrufs um den Parameter <i>nivotheme</i> können sie bei der Verwendung des Slider-Plugins "NivoSlider" das Theme wechseln. Im folgenden Beispiel wird das Theme von theme-default auf theme-bar gewechselt:</p>
+        
+        <pre>
+        {getImageSlider slidergroup=mits_imageslider nivotheme=theme-bar}
+        </pre>
+        
+        <p>Hier ein weiteres Beispiel, diesmal wird das Theme von theme-default auf theme-dark gewechselt:</p>
+        
+        <pre>
+        {getImageSlider slidergroup=anderer_imageslider nivotheme=theme-dark}
+        </pre>
+        
+        <h3>3. Fertig</h3>
+        
+        <p>Wir hoffen, der neue MITS ImageSlider v2.01 für die modified eCommerce Shopsoftware 2.0.0 gefällt ihnen! Benötigen sie Unterstützung bei der indivduellen Anpassung des Modul oder haben sie eventuell doch Probleme beim Einbau? Gerne können sie unseren kostenpflichtigen Support in Anspruch nehmen. Kontaktieren sie uns einfach unter <a href="https://www.merz-it-service.de/Kontakt:_:7.html" target="_blank">info@merz-it-service.de</a>
+    
+	</div>
+</main>
+<footer>
+	<a href="https://www.merz-it-service.de/Impressum:_:4.html" target="_blank" class="imagebutton">Impressum</a>
+    <p class="copyrightinfo">
+        Aufgeführte Warenzeichen und Markennamen sind Eigentum ihrer jeweiligen Inhaber.<br />Copyright &copy; <?php echo date('Y');?> <a href="https://www.merz-it-service.de" target="_blank">MerZ IT-SerVice - Internetsolutions for eCommerce and eBusiness</a>
+    </p>
+</footer>
+</body>
+</html>

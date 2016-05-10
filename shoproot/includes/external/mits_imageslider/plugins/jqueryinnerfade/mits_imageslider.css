@@ -1,0 +1,16 @@
+/* Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de */
+#content ul#imageslider,#content ul#imageslider li,#content ul#imageslider-nav,#content ul#imageslider-nav li{margin:0;padding:0}
+#imageslider {margin:0 auto;padding:0;list-style:none;list-style-position:outside;overflow:hidden;width:100%;max-width:100%;position:relative;}
+#imageslider li{margin:0;padding:0;list-style:none;list-style-position:outside;}
+#imageslider img{margin:0 auto;max-width:100%;height:auto}
+#imageslider div.slidercontent {display:block;z-index:888;position:absolute;bottom:4px;max-width:100%;overflow:hidden;background:#ccc;-moz-opacity:0.7;opacity:0.70;filter:alpha(opacity=70);}
+#imageslider div.slidercontentinner{margin:0 auto;padding:5px;max-width:100%;text-align:justify;font-size:0.9em;}
+#imageslider-nav {width:100%;list-style:none;list-style-position:outside;margin:0;padding:0}
+#imageslider-nav li.slideprev {width:25%;list-style:none;list-style-position:outside;margin:0;padding:0;float:left;text-align:left}
+#imageslider-nav li.slidepause{width:48%;list-style:none;list-style-position:outside;margin:0;padding:0;float:left;text-align:center}
+#imageslider-nav li.slidenext{width:25%;list-style:none;list-style-position:outside;margin:0;padding:0;float:right;text-align:right}
+#imageslider-nav a.prev,#imageslider-nav a.next {display:block;width:24px;height:24px;background: url(images/arrows.png) no-repeat;border:0}
+#imageslider-nav a.prev{text-indent:-9999px;background-position:2px 50%;float:left}
+#imageslider-nav a.next{text-indent:9999px;background-position:-11px 50%;float:right}
+#imageslider-nav a.pause{display:none}
+.innerfadeclear{float:none;width:100%;font-size:0;line-height:0;margin-bottom:40px}
