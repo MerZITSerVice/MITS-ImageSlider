@@ -3,7 +3,7 @@ ImageSlider for modified eCommerce Shopsoftware
 
 ########################################################################################################
 
-MITS ImageSlider v2.01 für modified eCommerce Shopsoftware
+MITS ImageSlider v2.02 für modified eCommerce Shopsoftware
 (c) Copyright 2008-2016 by Hetfield - MerZ IT-SerVice
 
 Author: 	Hetfield - https://www.merz-it-service.de
@@ -26,7 +26,7 @@ gegen das Urheberrecht und die GPL und werden zivil- und strafrechtlich verfolgt
 
 ########################################################################################################
 
-Anleitung für das Modul MITS ImageSlider v2.01
+Anleitung für das Modul MITS ImageSlider v2.02
 ========================================================================================================
 
 Sie finden die aktuellste Installationsanleitung unter http://imageslider.merz-it-service.de/readme.html
@@ -38,9 +38,9 @@ Systemvoraussetzung: Funktionsfähige modified eCommerce Shopsoftware ab der Ver
 
 Vor der Installation des Moduls sichern sie bitte komplett ihre aktuelle Shopinstallation (Dateien und Datenbank)!
 Für eventuelle Schäden übernehmen wir keine Haftung!
-Die Installation und Nutzung des Moduls Imageslider v2.01 erfolgt auf eigene Gefahr!
+Die Installation und Nutzung des Moduls Imageslider v2.02 erfolgt auf eigene Gefahr!
 
-Die Installation des Modul Imageslider v2.01 ist in der aktuellen Shopversion 2.0.0 ziemlich einfach.
+Die Installation des Modul Imageslider v2.02 ist in der aktuellen Shopversion 2.0.0 ziemlich einfach.
 
   1. Wenn ihr Template bereits Anpassung für den Imageslider v1.5 enthalten hat, so entfernen Sie 
      bitte diese Anpassungen vor der Installation! Dazu müssen Sie nur die Anweisungen für die 
@@ -50,7 +50,7 @@ Die Installation des Modul Imageslider v2.01 ist in der aktuellen Shopversion 2.
      im Verzeichns shoproot des Moduls vor dem Hochladen ebenfalls entsprechend umbenennen!
 
   3. Kopieren Sie anschließend einfach alle Dateien in dem Verzeichnis shoproot aus dem Modulpaket 
-     MITS_ImageSlider_v2.01 in das Hauptverzeichnis ihrer bestehenden 
+     MITS_ImageSlider_v2.02 in das Hauptverzeichnis ihrer bestehenden 
      modified eCommerce Shopsoftware 2.0.0 Installation. Es werden dabei keine Dateien überschrieben!
 
   4. Nachdem sie alle Dateien in den Shop übertragen haben melden sie sich bitte im Shop mit einem 
@@ -58,20 +58,20 @@ Die Installation des Modul Imageslider v2.01 ist in der aktuellen Shopversion 2.
 
   5. Wechseln sie in den Administrationsbereich und rufen sie den Menüpunkt Module -> System-Module auf.
 
-  6. Markieren sie dort den Eintrag Imageslider v2.01 © by Hetfield (MerZ IT-SerVice) und klicken sie dann 
+  6. Markieren sie dort den Eintrag Imageslider v2.02 © by Hetfield (MerZ IT-SerVice) und klicken sie dann 
      auf der rechten Seite auf den Button Installieren. Das Modul wird nun komplett installiert. 
      Sollten sie von einer früheren Version 1.5 updaten, erledigt der Installer des Moduls die Anpassung 
      der Datenbank komplett für sie.
 
   7. Konfigurieren sie nun das Modul nach ihren Wünschen. Die verschiedenen Einstellmöglichkeiten sind im Modul erklärt.
 
-  8. Rufen sie den Menüpunkt Hilfsprogramme -> MITS ImageSlider v2.01 auf. 
+  8. Rufen sie den Menüpunkt Hilfsprogramme -> MITS ImageSlider v2.02 auf. 
      Dort können sie Einträge anlegen, bearbeiten oder löschen.
 
 
 
 
-2. Den ImageSlider v2.01 im Template verfügbar machen
+2. Den ImageSlider v2 im Template verfügbar machen
 --------------------------------------------------------------------------------------------------------
 Um einen ImageSlider im Template anzuzeigen gibt es in der neuen Version verschiedene Möglichkeiten.
 
@@ -128,7 +128,7 @@ dann zur Beschränkung der Anzeige auf die Startseite auch folgenden Smarty-Code
 
 Variante 2: Als Smarty-Plugin überall im Template verwenden
 
-Neu im ImageSlider v2.01 ist die Nutzung des ImageSliders alsSmarty-Plugin. Damit können Sie den ImageSlider 
+Neu im ImageSlider v2 ist die Nutzung des ImageSliders als Smarty-Plugin. Damit können Sie den ImageSlider 
 in jeder beliebigen HTML-Template-Datei aufrufen. Vorraussetzung dafür ist die Einstellung der Anzeigeart general. 
 Der Standardaufruf mit der Gruppe MITS_IMAGESLIDER sieht wie folgt aus:
 
@@ -156,7 +156,7 @@ Hier ein weiteres Beispiel, diesmal wird das Theme von theme-default auf theme-d
 
 3. Fertig
 --------------------------------------------------------------------------------------------------------
-Wir hoffen, der neue MITS ImageSlider v2.01 für die modified eCommerce Shopsoftware 2.0.0 gefällt ihnen! 
+Wir hoffen, der neue MITS ImageSlider v2 für die modified eCommerce Shopsoftware 2.0.0 gefällt ihnen! 
 Benötigen sie Unterstützung bei der indivduellen Anpassung des Modul oder haben sie eventuell doch Probleme beim Einbau? 
 Gerne können sie unseren kostenpflichtigen Support in Anspruch nehmen. 
 Kontaktieren sie uns einfach unter info@merz-it-service.de
