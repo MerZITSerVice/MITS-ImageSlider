@@ -1,0 +1,3 @@
+An gewünschter Stelle einfügen:
+
+{if isset($box_IMAGESLIDERS)}{$box_IMAGESLIDERS}{/if}

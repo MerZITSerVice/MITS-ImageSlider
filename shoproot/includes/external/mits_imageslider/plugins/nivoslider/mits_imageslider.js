@@ -1,6 +1,6 @@
-// Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
+// Imageslider v2.02 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
 $(window).load(function() {	 
-	$('#slider').nivoSlider({ 
+	$('.mits_nivoSlider').nivoSlider({
 		effect: 'random',                 // Specify sets like: 'fold,fade,sliceDown' 
 		slices: 15,                       // For slice animations 
 		boxCols: 8,                       // For box animations 

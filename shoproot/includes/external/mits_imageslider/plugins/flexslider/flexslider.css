@@ -8,6 +8,7 @@
  */
 #content ul.slides,#content ul.slides li,#content .flex-control-nav,#content .flex-control-nav li{margin-left:0;margin-top:0} 
 /* Browser Resets */
+ul.slides,ul.slides li,
 .flex-container a:active,
 .flexslider a:active{outline:none}
 .slides,

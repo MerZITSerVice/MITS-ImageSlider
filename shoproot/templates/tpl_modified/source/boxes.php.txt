@@ -1,0 +1,13 @@
+Suche nach folgender Zeile:
+
+	?>
+
+und füge darüber diesen Block ein:
+
+  	// Imageslider (c) 2008 by Hetfield -www.MerZ-IT-SerVice.de - Begin
+	if (strstr($PHP_SELF, FILENAME_DEFAULT)) {
+		if (!isset ($_GET['manufacturers_id'])) {
+			if (isset ($cPath) && xtc_not_null($cPath)) { } else {  require(DIR_FS_BOXES . 'imagesliders.php'); }
+		}
+	}
+  	// Imageslider (c) 2008 by Hetfield - www.MerZ-IT-SerVice.de - End

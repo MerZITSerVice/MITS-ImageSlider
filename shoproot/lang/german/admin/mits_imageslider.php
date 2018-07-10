@@ -1,8 +1,8 @@
 <?php
-	// ImageSlider - (c) Copyright 2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
+	// ImageSlider - (c) Copyright 2008-2017 by Hetfield - www.MerZ-IT-SerVice.de
 	// only original from https://www.merz-it-service.de/Installation-ImageSlider-v1-5::74.html
 		
-	define('HEADING_TITLE_IMAGESLIDERS', 'ImageSlider v2.01 <small style="font-weight:normal;font-size:0.6em;">&copy; 2008-2016 by <a href="http://www.merz-it-service.de/" target="_blank">Hetfield</a></small>');
+	define('HEADING_TITLE_IMAGESLIDERS', 'ImageSlider v2.02 <small style="font-weight:normal;font-size:0.6em;">&copy; 2008-'.date('Y').' by <a href="http://www.merz-it-service.de/" target="_blank">Hetfield</a></small>');
 	define('HEADING_SUBTITLE_IMAGESLIDERS', '<a href="https://www.merz-it-service.de/" target="_blank"><img src="'.DIR_WS_EXTERNAL.'mits_imageslider/images/merz-it-service.png" border="0" alt="" style="display:block;max-width:100%;height:auto;max-height:40px;margin-top:6px;margin-bottom:6px;" /></a>');
 	define('TABLE_HEADING_IMAGESLIDERS', 'ImageSlider');
 	define('TABLE_HEADING_SLIDERGROUP', 'ImageSlider-Gruppe');

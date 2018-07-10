@@ -1,6 +1,6 @@
 // Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
 $(document).ready(function(){										
-	$('#imageslider').innerFade({
+	$('.imageslider').innerFade({
 		animationType: 	'fade', 
 		animate:		true,
 		first_slide: 	0,

@@ -11,8 +11,8 @@
 	}
 	
 	if ($mits_imageslider_active == true) {
-		$mits_slidergroups_query = xtc_db_query("SELECT DISTINCT imagesliders_group FROM " . TABLE_MITS_IMAGESLIDER . " WHERE imagesliders_group != 'mits_imageslider' ORDER BY imagesliders_group");
-		while ($mits_slidergroups = xtc_db_fetch_array($mits_slidergroups_query)) {			
+		$mits_slidergroups_query = xtDBquery("SELECT DISTINCT imagesliders_group FROM " . TABLE_MITS_IMAGESLIDER . " WHERE imagesliders_group != 'mits_imageslider' ORDER BY imagesliders_group");
+		while ($mits_slidergroups = xtc_db_fetch_array($mits_slidergroups_query,true)) {			
 			$smarty->assign(strtoupper($mits_slidergroups['imagesliders_group']), MITS_get_imageslider($mits_slidergroups['imagesliders_group']));
 		}
 		$mits_mainslider = MITS_get_imageslider('mits_imageslider');

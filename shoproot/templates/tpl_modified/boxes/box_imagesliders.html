@@ -1,0 +1,27 @@
+{config_load file="$language/lang_$language.conf" section="boxes"}
+{config_load file="lang_`$language`.custom"}
+{if isset($slider_content) && count($slider_content) > 0}
+<!-- Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - Begin -->
+<div id="mits_imageslider">
+    <ul class="mits_bxslider">
+        {foreach name=mits_slider item=slider_data from=$slider_content}
+        <li>
+            <a href="{$slider_data.link}" title="{$slider_data.titel}"{$slider_data.target}>
+                <img src="{$slider_data.bild}" alt="{$slider_data.titel}" title="{$slider_data.text}" />
+            </a>
+        </li>
+        {/foreach}
+    </ul>
+</div>
+<!-- Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - End -->
+{/if}
+{*
+    Mögliche Smarty-Variablen:
+    ---------------------------------------------------
+    {$slider_data.bild}   // Pfad zum Sliderbild
+    {$slider_data.titel}  // Titel des Sliderbildeintrags
+    {$slider_data.text}   // Text des Sliderbildeintrags
+    {$slider_data.link}   // Link des Sliderbildeintrags
+    {$slider_data.target} // Zielfenster des Links
+    ---------------------------------------------------    
+*}

@@ -15,9 +15,9 @@
 		$slidergroup = (!isset($params['slidergroup'])) ? 'mits_imageslider' : strtolower($params['slidergroup']);
   				
 		if ($slider_active == true) {
-			$mits_slidergroups_query = xtc_db_query("SELECT DISTINCT imagesliders_group FROM " . TABLE_MITS_IMAGESLIDER . " WHERE imagesliders_group = '".xtc_db_input($slidergroup)."' ORDER BY imagesliders_group");
+			$mits_slidergroups_query = xtDBquery("SELECT DISTINCT imagesliders_group FROM " . TABLE_MITS_IMAGESLIDER . " WHERE imagesliders_group = '".xtc_db_input($slidergroup)."' ORDER BY imagesliders_group");
 			if (xtc_db_num_rows($mits_slidergroups_query)) {
-				$mits_slidergroups = xtc_db_fetch_array($mits_slidergroups_query);
+				$mits_slidergroups = xtc_db_fetch_array($mits_slidergroups_query,true);
 				$mits_slider = MITS_get_imageslider($mits_slidergroups['imagesliders_group']);
 				if (isset($params['nivotheme']) && $params['nivotheme'] != '') {
 					$mits_slider = str_replace('theme-default',$params['nivotheme'],$mits_slider);

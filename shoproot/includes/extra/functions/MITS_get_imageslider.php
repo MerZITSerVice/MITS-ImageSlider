@@ -13,14 +13,14 @@
 			
 			$mits_imagesliders_string = '';
 			
-			$mits_imagesliders_query = xtc_db_query("SELECT * FROM ".TABLE_MITS_IMAGESLIDER." i, ".TABLE_MITS_IMAGESLIDER_INFO." ii
+			$mits_imagesliders_query = xtDBquery("SELECT * FROM ".TABLE_MITS_IMAGESLIDER." i, ".TABLE_MITS_IMAGESLIDER_INFO." ii
 													 WHERE languages_id='".(int) $_SESSION['languages_id']."'
 													 AND i.imagesliders_id = ii.imagesliders_id
 													 AND ii.imagesliders_image != ''
 													 AND i.status = '0'
 													 AND i.imagesliders_group = '".xtc_db_input($group)."'
 													 ORDER BY i.sorting, i.imagesliders_id ASC");
-			if (xtc_db_num_rows($mits_imagesliders_query)) {	
+			if (xtc_db_num_rows($mits_imagesliders_query, true)) {	
 				$sliderdata = array();
 				while ($mits_imageslider_data = xtc_db_fetch_array($mits_imagesliders_query, true)) {  
 									
@@ -75,8 +75,8 @@
 	
 			if (MODULE_MITS_IMAGESLIDER_TYPE == 'bxSlider') {
 				if (sizeof($sliderdata) > 0) {
-					$sliderclass = ((CURRENT_TEMPLATE == 'tpl_modified') ? ' class="bxcarousel_slider"' : ' class="mits_bxslider"');
-					if (CURRENT_TEMPLATE == 'tpl_modified') $mits_imagesliders_string .= '<div class="content_banner cf">';
+					$sliderclass = ((strpos(CURRENT_TEMPLATE,'tpl_modified') !== false) ? ' class="bxcarousel_slider"' : ' class="mits_bxslider"');
+                    if(strpos(CURRENT_TEMPLATE,'tpl_modified') !== false) $mits_imagesliders_string .= '<div class="content_banner cf">';
 					$mits_imagesliders_string .= '
 					<ul'.$sliderclass.'>';
 					for ($i = 0, $n = sizeof($sliderdata); $i < $n; $i++) {
@@ -89,7 +89,7 @@
 					}
 					$mits_imagesliders_string .= '
 					</ul>';
-					if (CURRENT_TEMPLATE == 'tpl_modified') $mits_imagesliders_string .= '</div>';
+                    if(strpos(CURRENT_TEMPLATE,'tpl_modified') !== false) $mits_imagesliders_string .= '</div>';
 				}			
 			}
 					
@@ -105,7 +105,7 @@
 						$mits_imagesliders_string .= chr(9).'</div>'.chr(13);
 					}
 					$mits_imagesliders_string .= '
-						<div id="slider" class="nivoSlider">'.chr(13);
+						<div class="nivoSlider mits_nivoSlider">'.chr(13);
 					for ($i = 0, $n = sizeof($sliderdata); $i < $n; $i++) {
 						$mits_imagesliders_string .= '<a href="'.$sliderdata[$i]['link'].'" title="'.$sliderdata[$i]['titel'].'"'.$sliderdata[$i]['target'].'><img src="'.$sliderdata[$i]['bild'].'" title="#'.$sliderdata[$i]['id'].'" alt="'.$sliderdata[$i]['titel'].'" /></a>'.chr(13);
 					}				
@@ -142,7 +142,7 @@
 				if (sizeof($sliderdata) > 0) {
 					$mits_imagesliders_string .= '				
 					<div class="mits_imageslider">
-						<ul id="imageslider">';
+						<ul class="imageslider">';
 					for ($i = 0, $n = sizeof($sliderdata); $i < $n; $i++) {
 						$mits_imagesliders_string .= '
 							<li>
@@ -155,7 +155,7 @@
 					}
 					$mits_imagesliders_string .= '
 						</ul>
-						<ul id="imageslider-nav">
+						<ul class="imageslider-nav">
 							<li class="slideprev"><a class="prev" href="#">'.PREVNEXT_BUTTON_PREV.'</a></li>
 							<li class="slidepause"><a class="pause" href="#">Pause</a></li>
 							<li class="slidenext"><a class="next" href="#">'.PREVNEXT_BUTTON_NEXT.'</a></li>
@@ -166,7 +166,7 @@
 			}
 						
 			if (!empty($mits_imagesliders_string)) {
-				return '<!-- Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - Begin --><div id="mits_imageslider">'.$mits_imagesliders_string.'</div><!-- Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - End -->';
+				return '<!-- Imageslider v2.02 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - Begin --><div class="mits_imageslider_container">'.$mits_imagesliders_string.'</div><!-- Imageslider v2.02 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de - End -->';
 			} else {
 				return false;	
 			}

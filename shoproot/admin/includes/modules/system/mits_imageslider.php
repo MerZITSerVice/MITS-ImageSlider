@@ -9,7 +9,7 @@ defined( '_VALID_XTC' ) or die( 'Direct Access to this location is not allowed.'
 class mits_imageslider {
   var $code, $title, $description, $enabled;
 
-  function mits_imageslider() {
+  function __construct() {
      $this->code = 'mits_imageslider';
      $this->title = MODULE_MITS_IMAGESLIDER_TEXT_TITLE;
      $this->description = MODULE_MITS_IMAGESLIDER_TEXT_DESCRIPTION;
@@ -63,23 +63,23 @@ class mits_imageslider {
 		xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_key, configuration_value,  configuration_group_id, sort_order, set_function, date_added) VALUES ('MAX_DISPLAY_IMAGESLIDERS_RESULTS', '20',  '6', '7', NULL, now())");
 		xtc_db_query("CREATE TABLE IF NOT EXISTS ".TABLE_MITS_IMAGESLIDER." (
 					  `imagesliders_id` int(11) NOT NULL auto_increment,
-					  `imagesliders_name` varchar(32) NOT NULL default '',
+					  `imagesliders_name` varchar(255) NOT NULL default '',
 					  `date_added` datetime default NULL,
 					  `last_modified` datetime default NULL,
 					  `status` tinyint(1) NOT NULL default '0',
 					  `sorting` tinyint(1) NOT NULL default '0',
-					  `imagesliders_group` varchar(64) NOT NULL default 'mits_imageslider',
+					  `imagesliders_group` varchar(128) NOT NULL default 'mits_imageslider',
 					  PRIMARY KEY  (`imagesliders_id`)
 					)");
 		xtc_db_query("CREATE TABLE IF NOT EXISTS ".TABLE_MITS_IMAGESLIDER_INFO." (
 					  `imagesliders_id` int(11) NOT NULL,
 					  `languages_id` int(11) NOT NULL,
-					  `imagesliders_title` varchar(100) NOT NULL,
+					  `imagesliders_title` varchar(255) NOT NULL,
 					  `imagesliders_url` varchar(255) NOT NULL,
 					  `imagesliders_url_target` tinyint(1) NOT NULL default '0',
 					  `imagesliders_url_typ` tinyint(1) NOT NULL default '0',
 					  `imagesliders_description` text,
-					  `imagesliders_image` varchar(64) default NULL,
+					  `imagesliders_image` varchar(255) default NULL,
 					  `url_clicked` int(5) NOT NULL default '0',
 					  `date_last_click` datetime default NULL,
 					  PRIMARY KEY  (`imagesliders_id`,`languages_id`)
