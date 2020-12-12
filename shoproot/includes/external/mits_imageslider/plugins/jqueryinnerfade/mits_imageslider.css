@@ -1,4 +1,4 @@
-/* Imageslider v2.02 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de */
+/* MITS Imageslider v2.03 (c)2008-2020 by Hetfield - www.MerZ-IT-SerVice.de */
 #content ul.imageslider,#content ul.imageslider li,#content ul.imageslider-nav,#content ul.imageslider-nav li,ul.imageslider,ul.imageslider li{margin:0;padding:0}
 .imageslider {margin:0 auto;padding:0;list-style:none;list-style-position:outside;overflow:hidden;width:100%;max-width:100%;position:relative;}
 .imageslider li{margin:0;padding:0;list-style:none;list-style-position:outside;}
@@ -9,7 +9,7 @@
 .imageslider-nav li.slideprev {width:25%;list-style:none;list-style-position:outside;margin:0;padding:0;float:left;text-align:left}
 .imageslider-nav li.slidepause{width:48%;list-style:none;list-style-position:outside;margin:0;padding:0;float:left;text-align:center}
 .imageslider-nav li.slidenext{width:25%;list-style:none;list-style-position:outside;margin:0;padding:0;float:right;text-align:right}
-.imageslider-nav a.prev,#imageslider-nav a.next {display:block;width:24px;height:24px;background: url(images/arrows.png) no-repeat;border:0}
+.imageslider-nav a.prev,.imageslider-nav a.next {display:block;width:24px;height:24px;background: url(images/arrows.png) no-repeat;border:0}
 .imageslider-nav a.prev{text-indent:-9999px;background-position:2px 50%;float:left}
 .imageslider-nav a.next{text-indent:9999px;background-position:-11px 50%;float:right}
 .imageslider-nav a.pause{display:none}

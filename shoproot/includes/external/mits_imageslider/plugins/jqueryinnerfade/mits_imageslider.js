@@ -1,4 +1,4 @@
-// Imageslider v2.01 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
+// MITS Imageslider v2.03 (c)2008-2020 by Hetfield - www.MerZ-IT-SerVice.de
 $(document).ready(function(){										
 	$('.imageslider').innerFade({
 		animationType: 	'fade', 

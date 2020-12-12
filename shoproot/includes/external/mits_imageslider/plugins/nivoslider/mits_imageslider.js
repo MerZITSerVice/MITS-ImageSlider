@@ -1,4 +1,4 @@
-// Imageslider v2.02 (c)2008-2016 by Hetfield - www.MerZ-IT-SerVice.de
+// MITS Imageslider v2.03 (c)2008-2020 by Hetfield - www.MerZ-IT-SerVice.de
 $(window).load(function() {	 
 	$('.mits_nivoSlider').nivoSlider({
 		effect: 'random',                 // Specify sets like: 'fold,fade,sliceDown' 
