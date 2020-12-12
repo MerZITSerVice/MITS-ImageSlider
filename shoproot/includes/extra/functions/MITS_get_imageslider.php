@@ -146,7 +146,7 @@ function MITS_get_imageslider($group = 'mits_imageslider') {
 						<div class="flexslider">
 							<ul class="slides">';
         for ($i = 0, $n = sizeof($sliderdata); $i < $n; $i++) {
-          $slidertext = (($sliderdata[$i]['text'] != '') ? '<p class="flex-caption">' . $sliderdata[$i]['text'] . '</p>' : '');
+          $slidertext = (($sliderdata[$i]['text'] != '') ? '<div class="flex-caption"><div class="flex-caption-header">' . $sliderdata[$i]['titel'] . '</div><div>' . $sliderdata[$i]['text'] . '</div></div>' : '<div class="flex-caption"><div class="flex-caption-header">' . $sliderdata[$i]['titel'] . '</div></div>');
           $mits_imagesliders_string .= '
 								<li>
 									<a href="' . $sliderdata[$i]['link'] . '" title="' . $sliderdata[$i]['titel'] . '"' . $sliderdata[$i]['target'] . '>
