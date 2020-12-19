@@ -12,9 +12,11 @@
  * --------------------------------------------------------------
  */
 
-define('HEADING_TITLE_IMAGESLIDERS', 'MITS ImageSlider v2.03 <small style="font-weight:normal;font-size:0.6em;">&copy; 2008-' . date('Y') . ' by <a href="http://www.merz-it-service.de/" target="_blank">Hetfield</a></small>');
+define('HEADING_TITLE_IMAGESLIDERS', 'MITS ImageSlider <small style="font-weight:normal;font-size:0.6em;">&copy; 2008-' . date('Y') . ' by <a href="http://www.merz-it-service.de/" target="_blank">Hetfield</a></small>');
 define('HEADING_SUBTITLE_IMAGESLIDERS', '<a href="https://www.merz-it-service.de/" target="_blank"><img src="' . DIR_WS_EXTERNAL . 'mits_imageslider/images/merz-it-service.png" border="0" alt="" style="display:block;max-width:100%;height:auto;max-height:40px;margin-top:6px;margin-bottom:6px;" /></a>');
 define('TABLE_HEADING_IMAGESLIDERS', 'MITS ImageSlider');
+define('TABLE_HEADING_IMAGESLIDERS_NAME', 'ImageSlider Name');
+define('TABLE_HEADING_IMAGESLIDERS_IMAGE', 'Bild');
 define('TABLE_HEADING_SLIDERGROUP', 'ImageSlider-Gruppe');
 define('TABLE_HEADING_SORTING', 'Sortierung');
 define('TABLE_HEADING_STATUS', 'Status');
@@ -59,8 +61,18 @@ define('MITS_ACTIVE', 'Aktivieren');
 define('MITS_NOTACTIVE', 'Deaktivieren');
 define('TEXT_IMAGESLIDERS_GROUP', 'ImageSlider-Gruppe:');
 define('TEXT_IMAGESLIDERS_NEW_GROUP', 'W&auml;hlen Sie im Dropdown-Feld die gew&uuml;nschte ImageSlider-Gruppe aus (falls vorhanden) oder geben Sie im Textfeld darunter eine neue ImageSlider-Gruppe ein.');
-define('TEXT_IMAGESLIDERS_NEW_GROUP_NOTE', 'Damit ein ImageSlider im Template angezeigt wird, muss das Template erweitert werden.<br/>Beispiel: ImageSlider Gruppe ist mits_imageslider, dann kann im Template in der index.html dieser ImageSlider mitder Smarty-Variable {$MITS_IMAGESLIDER} an der gew&uuml;nschten Position angezeigt werden');
+define('TEXT_IMAGESLIDERS_NEW_GROUP_NOTE', 'Damit ein ImageSlider im Template angezeigt wird, muss das Template erweitert werden. Beispiel: ImageSlider-Gruppe ist <i>MITS_IMAGESLIDER</i>, dann kann im Template in der index.html dieser ImageSlider mit der Smarty-Variable <i>{$MITS_IMAGESLIDER}</i> an der gew&uuml;nschten Position angezeigt werden.<br /><br /><a href="https://imageslider.merz-it-service.de/readme.html" target="_blank" onclick="window.open(\'https://imageslider.merz-it-service.de/readme.html\', \'Anleitung f&uuml;r das Modul MITS ImageSlider\', \'scrollbars=yes,resizable=yes,menubar=yes,width=960,height=600\'); return false"><strong><u>Anleitung f&uuml;r das Modul MITS ImageSlider &raquo;</u></strong></a>');
 define('ERROR_IMAGESLIDER_NAME_REQUIRED', 'Fehler: Ein Titel wird ben&ouml;tigt.');
 define('ERROR_IMAGESLIDER_GROUP_REQUIRED', 'Fehler: Eine ImageSlider-Gruppe wird ben&ouml;tigt.');
 define('ERROR_IMAGESLIDER_IMAGE_REQUIRED', 'Fehler: Ein Bild wird selbstverst&auml;ndlich ben&ouml;tigt.');
+
+define('TEXT_IMAGESLIDERS_DATE_FORMAT', 'JJJJ-MM-TT');
+define('TEXT_IMAGESLIDERS_EXPIRES_ON', 'G&uuml;ltigkeit bis:');
+define('TEXT_IMAGESLIDERS_SCHEDULED_AT', 'G&uuml;ltigkeit ab:');
+define('TEXT_IMAGESLIDERS_EXPIRCY_NOTE', '<b>G&uuml;ltigkeit Bemerkung:</b><ul><li>Nur ein Feld ausf&uuml;llen!</li><li>Wenn das Sliderbild unbegrenzt angezeigt werden soll, tragen Sie in diesen Feldern nichts ein.</li></ul>');
+define('TEXT_IMAGESLIDERS_SCHEDULE_NOTE', '<b>G&uuml;ltigkeit ab Bemerkung:</b><ul><li>Bei Verwendung dieser Funktion, wird das Sliderbild erst ab dem angegeben Datum angezeigt.</li><li>Alle Sliderbilder mit dieser Funktion werden bis zu ihrer Aktivierung als deaktiviert angezeigt.</li></ul>');
+
+define('TEXT_IMAGESLIDERS_DATE_ADDED', 'hinzugef&uuml;gt am:');
+define('TEXT_IMAGESLIDERS_SCHEDULED_AT_DATE', 'G&uuml;ltigkeit ab: <b>%s</b>');
+define('TEXT_IMAGESLIDERS_EXPIRES_AT_DATE', 'G&uuml;ltigkeit bis zum: <b>%s</b>');
 ?>

@@ -12,9 +12,9 @@
  * --------------------------------------------------------------
  */
 
-if (defined(MODULE_MITS_IMAGESLIDER_STATUS) && MODULE_MITS_IMAGESLIDER_STATUS == 'true') {
-  if (strstr($PHP_SELF, FILENAME_CONTENT) && isset($_GET['coID']) && (int)$_GET['coID'] > 0) {
-    $mits_imageslider_content_query_raw = "SELECT imagesliders_group FROM " . TABLE_CONTENT_MANAGER . " WHERE content_group = " . (int)$_GET['coID'] . " LIMIT 1";
+if (defined('MODULE_MITS_IMAGESLIDER_STATUS') && MODULE_MITS_IMAGESLIDER_STATUS == 'true') {
+  if (basename($PHP_SELF) == FILENAME_CONTENT && isset($_GET['coID']) && (int)$_GET['coID'] > 0) {
+    $mits_imageslider_content_query_raw = "SELECT imagesliders_group FROM " . TABLE_CONTENT_MANAGER . " WHERE content_group = " . (int)$_GET['coID'] . " AND languages_id = " . (int)$_SESSION['languages_id'] . " LIMIT 1";
     $mits_imageslider_content_query = xtDBquery($mits_imageslider_content_query_raw);
     $mits_imageslider_content = xtc_db_fetch_array($mits_imageslider_content_query, true);
 

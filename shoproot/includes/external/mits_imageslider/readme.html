@@ -2,10 +2,61 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Anleitung f&uuml;r das Modul MITS ImageSlider v2.01</title>
-<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat|Fredericka+the+Great|Headland+One|Patrick+Hand|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+<title>Anleitung f&uuml;r das Modul MITS ImageSlider v2.03</title>
 <style type="text/css">
 <!--
+/* love-ya-like-a-sister-regular - latin */
+@font-face {
+    font-family: 'Love Ya Like A Sister';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/love-ya-like-a-sister-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Love Ya Like A Sister Regular'), local('LoveYaLikeASister-Regular'),
+    url('fonts/love-ya-like-a-sister-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/love-ya-like-a-sister-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/love-ya-like-a-sister-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/love-ya-like-a-sister-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/love-ya-like-a-sister-v8-latin-regular.svg#LoveYaLikeASister') format('svg'); /* Legacy iOS */
+}
+/* headland-one-regular - latin */
+@font-face {
+    font-family: 'Headland One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/headland-one-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Headland One'), local('HeadlandOne-Regular'),
+    url('fonts/headland-one-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/headland-one-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/headland-one-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/headland-one-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/headland-one-v5-latin-regular.svg#HeadlandOne') format('svg'); /* Legacy iOS */
+}
+/* patrick-hand-regular - latin */
+@font-face {
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/patrick-hand-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Patrick Hand'), local('PatrickHand-Regular'),
+    url('fonts/patrick-hand-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/patrick-hand-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/patrick-hand-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/patrick-hand-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/patrick-hand-v11-latin-regular.svg#PatrickHand') format('svg'); /* Legacy iOS */
+}
+/* walter-turncoat-regular - latin */
+@font-face {
+    font-family: 'Walter Turncoat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/walter-turncoat-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Walter Turncoat Regular'), local('WalterTurncoat-Regular'),
+    url('fonts/walter-turncoat-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/walter-turncoat-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/walter-turncoat-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/walter-turncoat-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/walter-turncoat-v8-latin-regular.svg#WalterTurncoat') format('svg'); /* Legacy iOS */
+}
 *{padding:0;margin:0}
 html,body{font-size:100%;font-family:'Headland One',sans-serif;margin:0;padding:0}
 body{position:relative;background:#ffe;font-size:95%}
@@ -49,30 +100,30 @@ a.imagebutton:focus{box-shadow:0 0 0.4em #6a9;color:#fff;background:#6a9 linear-
 </header>
 <main role="main">	
 	<div id="main">
-    	<h2>Anleitung f&uuml;r das Modul MITS ImageSlider v2.01</h2>
+    	<h2>Anleitung f&uuml;r das Modul MITS ImageSlider v2.03</h2>
         
-        <p><strong>Modul-Download: <a href="http://imageslider.merz-it-service.de/MITS_ImageSlider_v2.01.zip" target="_blank"><u>MITS_ImageSlider_v2.01.zip</u></a></strong></p>
+        <p><strong>Modul-Download: <a href="https://www.merz-it-service.de/media/products/MITS_ImageSlider_v2.03.zip" target="_blank"><u>MITS_ImageSlider_v2.03.zip</u></a></strong></p>
     	
         <h3>1. Installation</h3>
         
-        <p><strong>Systemvoraussetzung:</strong> Funktionsf&auml;hige modified eCommerce Shopsoftware ab der Version 2.0.0 rev 9678</p>
+        <p><strong>Systemvoraussetzung:</strong> Funktionsf&auml;hige modified eCommerce Shopsoftware ab der Version 2.0.0.0 rev 9678</p>
         
-        <p class="hinweis"><strong>Vor der Installation des Moduls sichern sie bitte komplett ihre aktuelle Shopinstallation (Dateien und Datenbank)!<br/>Für eventuelle Schäden übernehmen wir keine Haftung!<br />Die Installation und Nutzung des Moduls Imageslider v2.01 erfolgt auf eigene Gefahr!</strong></p>
+        <p class="hinweis"><strong>Vor der Installation des Moduls sichern sie bitte komplett ihre aktuelle Shopinstallation (Dateien und Datenbank)!<br/>Für eventuelle Schäden übernehmen wir keine Haftung!<br />Die Installation und Nutzung des Moduls Imageslider v2.03 erfolgt auf eigene Gefahr!</strong></p>
         
-        <p>Die Installation des Modul Imageslider v2.01 ist in der aktuellen Shopversion 2.0.0 ziemlich einfach.</p>
+        <p>Die Installation des Modul Imageslider v2.03 ist in der aktuellen Shopversion 2.x ziemlich einfach.</p>
     	
         <ol class="install">
         	<li>Wenn ihr Template bereits Anpassung für den Imageslider v1.5 enthalten hat, so entfernen Sie bitte diese Anpassungen vor der Installation! Dazu müssen Sie nur die Anweisungen für die Templateanpassungen aus der Installationsanleitung für die Version v1.5 rückgängig machen.</li>
             <li>Falls der admin-Order des Shops unbenannt wurde, dann entsprechnd auch den Ordner <i>admin</i> im Verzeichns <i>shoproot</i> des Moduls vor dem Hochladen ebenfalls entsprechend umbenennen!</li>
-       		<li>Kopieren Sie anschließend einfach alle Dateien in dem Verzeichnis <i>shoproot</i> aus dem Modulpaket <i>MITS_ImageSlider_v2.01</i> in das Hauptverzeichnis ihrer bestehenden modified eCommerce Shopsoftware 2.0.0 Installation. Es werden dabei keine Dateien überschrieben!</li>
+       		<li>Kopieren Sie anschließend einfach alle Dateien in dem Verzeichnis <i>shoproot</i> aus dem Modulpaket <i>MITS_ImageSlider_v2.03</i> in das Hauptverzeichnis ihrer bestehenden modified eCommerce Shopsoftware 2.x Installation. Es werden dabei keine Dateien überschrieben!</li>
             <li>Nachdem sie alle Dateien in den Shop übertragen haben melden sie sich bitte im Shop mit einemm gültigen Adminzugang an, der die Berechtigung besitzt auch Systemmodule zu installieren.</li>
             <li>Wechseln sie in den Administrationsbereich und rufen sie den Menüpunkt <i>Module -> System-Module</i> auf.</li>
-            <li>Markieren sie dort den Eintrag <i>Imageslider v2.01 © by Hetfield (MerZ IT-SerVice)</i> und klicken sie dann auf der rechten Seite auf den Button <i>Installieren</i>. Das Modul wird nun komplett installiert. Sollten sie von einer früheren Version 1.5 updaten, erledigt der Installer des Moduls die Anpassung der Datenbank komplett für sie.</li>
+            <li>Markieren sie dort den Eintrag <i>MITS ImageSlider v2.03 © by Hetfield (MerZ IT-SerVice)</i> und klicken sie dann auf der rechten Seite auf den Button <i>Installieren</i>. Das Modul wird nun komplett installiert. Sollten sie von einer früheren Version 1.5 updaten, erledigt der Installer des Moduls die Anpassung der Datenbank komplett für sie.</li>
             <li>Konfigurieren sie nun das Modul nach ihren Wünschen. Die verschiedenen Einstellmöglichkeiten sind im Modul erklärt.</li>
-            <li>Rufen sie den Menüpunkt <i>Hilfsprogramme -> MITS ImageSlider v2.01</i> auf. Dort können sie Einträge anlegen, bearbeiten oder löschen. </li>
+            <li>Rufen sie den Menüpunkt <i>Hilfsprogramme -> MITS ImageSlider v2.03</i> auf. Dort können sie Einträge anlegen, bearbeiten oder löschen. </li>
         </ol>
         
-        <h3>2. Den ImageSlider v2.01 im Template verfügbar machen</h3>
+        <h3>2. Den MITS ImageSlider v2.03 im Template verfügbar machen</h3>
         
         <p>Um einen ImageSlider im Template anzuzeigen gibt es in der neuen Version verschiedene Möglichkeiten.</p>
         
@@ -131,7 +182,7 @@ a.imagebutton:focus{box-shadow:0 0 0.4em #6a9;color:#fff;background:#6a9 linear-
         
         <h4>Variante 2: Als Smarty-Plugin überall im Template verwenden</h4>
         
-        <p>Neu im ImageSlider v2.01 ist die Nutzung des ImageSliders als Smarty-Plugin. Damit können Sie den ImageSlider in jeder beliebigen HTML-Template-Datei aufrufen. Vorraussetzung dafür ist die Einstellung der Anzeigeart <i>general</i>. Der Standardaufruf mit der Gruppe MITS_IMAGESLIDER sieht wie folgt aus:</p>
+        <p>Neu seit dem MITS ImageSlider v2.03 ist die Nutzung des ImageSliders als Smarty-Plugin. Damit können Sie den ImageSlider in jeder beliebigen HTML-Template-Datei aufrufen. Vorraussetzung dafür ist die Einstellung der Anzeigeart <i>general</i>. Der Standardaufruf mit der Gruppe MITS_IMAGESLIDER sieht wie folgt aus:</p>
         
         <pre>
         {getImageSlider slidergroup=mits_imageslider}
@@ -154,10 +205,31 @@ a.imagebutton:focus{box-shadow:0 0 0.4em #6a9;color:#fff;background:#6a9 linear-
         <pre>
         {getImageSlider slidergroup=anderer_imageslider nivotheme=theme-dark}
         </pre>
+
+        <p>Optional können Sie seit der Version 2.03 auch bei Produkten und Kategorien jeweils eine Slidergruppe zuweisen. Damit können Sie für Produkte und Kategorien einfach eigene Slider erstellen und pflegen ohne viel Aufwand. Zur Nutzung dieser Funktion müssen Sie allerdings einige Templateanpassungen vornehmen.</p>
+
+        <p>Für die Anpassung zur Slideranzeige bei Produkten müssen Sie in den gewünschten Templatevorlagen für ihre Produkte(dazu gehören alle Template-Dateien im Ordner <i>module/product_info</i>  ihres Templates, z.B. <i>shoproot/templates/tpl_modified_responsive/module/product_info/product_info_tabs_v1.html</i>) einfach an gewünschter Stelle folgende Zeile einfügen:</p>
+
+        <pre>
+        {if isset($MITS_PRODUCTS_IMAGESLIDER)}{$MITS_PRODUCTS_IMAGESLIDER}{/if}
+        </pre>
+
+        <p>Für die Anpassung zur Slideranzeige bei Kategorien müssen Sie die Templatevorlagen für ihre Kategorien(dazu gehören alle Template-Dateien im Ordner <i>module/product_listing</i> und <i>module/categorie_listing</i> ihres Templates, z.B. <i>shoproot/templates/tpl_modified_responsive/module/product_listing/product_listing_v1.html</i> oder <i>shoproot/templates/tpl_modified_responsive/module/categorie_listing/categorie_listing.html</i>) anpassen. Dazu einfach in der jeweiligen Datei an gewünschter Stelle folgende Zeile einfügen:</p>
+
+        <pre>
+        {if isset($MITS_CATEGORIES_IMAGESLIDER)}{$MITS_CATEGORIES_IMAGESLIDER}{/if}
+        </pre>
+
+        <p>Für die Anpassung zur Slideranzeige bei Content-Seiten müssen Sie in die Templatevorlage für die Content-Seiten <i>content.html</i> im Ordner <i>module</i> ihres Templates (z.B. <i>shoproot/templates/tpl_modified_responsive/module/content.html</i>) einfach an gewünschter Stelle folgende Zeile einfügen:</p>
+
+        <pre>
+        {if isset($MITS_CONTENT_IMAGESLIDER)}{$MITS_CONTENT_IMAGESLIDER}{/if}
+        </pre>
+
         
         <h3>3. Fertig</h3>
         
-        <p>Wir hoffen, der neue MITS ImageSlider v2.01 für die modified eCommerce Shopsoftware 2.0.0 gefällt ihnen! Benötigen sie Unterstützung bei der indivduellen Anpassung des Modul oder haben sie eventuell doch Probleme beim Einbau? Gerne können sie unseren kostenpflichtigen Support in Anspruch nehmen. Kontaktieren sie uns einfach unter <a href="https://www.merz-it-service.de/Kontakt:_:7.html" target="_blank">info@merz-it-service.de</a>
+        <p>Wir hoffen, der neue MITS ImageSlider v2.03 für die modified eCommerce Shopsoftware 2.x gefällt ihnen! Benötigen sie Unterstützung bei der indivduellen Anpassung des Modul oder haben sie eventuell doch Probleme beim Einbau? Gerne können sie unseren kostenpflichtigen Support in Anspruch nehmen. Kontaktieren sie uns einfach unter <a href="https://www.merz-it-service.de/Kontakt:_:7.html" target="_blank">info@merz-it-service.de</a>
     
 	</div>
 </main>
